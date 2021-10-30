@@ -145,11 +145,14 @@ define gui.dialogue_text_xalign = 0.0
 ## how buttons are displayed.
 
 ## The width and height of a button, in pixels. If None, Ren'Py computes a size.
-define gui.button_width = None
-define gui.button_height = None
+# define gui.button_width = None
+# define gui.button_height = None
+define gui.button_width = 200
+define gui.button_height = 56
 
 ## The borders on each side of the button, in left, top, right, bottom order.
-define gui.button_borders = Borders(4, 4, 4, 4)
+# define gui.button_borders = Borders(4, 4, 4, 4)
+define gui.button_borders = Borders(55, 4, 5, 4)
 
 ## If True, the background image will be tiled. If False, the background image
 ## will be linearly scaled.
@@ -247,6 +250,7 @@ define gui.file_slot_rows = 2
 ## The position of the left side of the navigation buttons, relative to the left
 ## side of the screen.
 define gui.navigation_xpos = 40
+define gui.navigation_ypos = 600
 
 ## The vertical position of the skip indicator.
 define gui.skip_ypos = 10
