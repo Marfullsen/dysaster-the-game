@@ -62,7 +62,10 @@ define config.has_voice = True
 ## game, until it is stopped or another file is played.
 
 # define config.main_menu_music = "main-menu-theme.ogg"
-
+define config.main_menu_music = "audio/main-menu-voice.mp3"
+# How many seconds will the config.main_menu_music fadein
+define config.main_menu_music_fadein = 2.0
+stop music
 
 ## Transitions #################################################################
 ##
