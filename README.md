@@ -20,8 +20,8 @@
 
 ## 📝 Contenidos
 
-- [Categorías](#cat)
-- [Dysaster, la demo](#demo)
+- [¿Qué es Dysaster?](#demo)
+- [Categorías](#categorias)
 - [Limitaciones](#limitations)
 - [Planes a futuro](#future_scope)
 - [Lanzando el juego](#getting_started)
@@ -31,7 +31,18 @@
 - [Autores](#authors)
 - [Agradecimientos](#acknowledgments)
 
-## 🧐 Categorías <a name = "cat"></a>
+
+## 💡 ¿Qué es Dysaster? <a name = "demo"></a>
+
+Dysaster es una novela visual (tambien llamado _juego de decisiones_), con la que participamos en el evento organizado por el Citt llamado "DevJam",\
+en este evento los estudiantes de diversas carreras presentan todo tipo de juegos, personajes, ideas, etc.
+
+## 🏁 Sobre nuestro team
+
+Conformamos un equipo de 5 integrantes, y decidimos inscribirnos en la categoría **demo*.\
+Usando el motor de novelas visuales llamado [RenPy](https://www.renpy.org/), creamos este juego de decisiones llamado __Dysaster__.
+
+## 🧐 Categorías <a name = "categorias"></a>
 
 La DevJam fue organizada por el [CTTT](https://beacons.page/citt.duocuc), en [las bases del concurso](https://docs.google.com/document/d/1vkKhEZsnZai61lMFDaIjd1TNPfzA5MK7DmYnEyKL26g) se especifica que existen tres caterogías:
 - GOTY: Por sus siglas en inglés, "Game of the year", juego del año, donde participan juegos de primera categoría.
@@ -39,12 +50,6 @@ La DevJam fue organizada por el [CTTT](https://beacons.page/citt.duocuc), en [la
 - Crea tu personaje: Se dibuja un personaje y se presenta para el concurso.
 
 Además de esto, se hará una premiación del juego más votado.
-
-## 💡 Dysaster, la demo <a name = "demo"></a>
-
-Conformamos un equipo de 5 integrantes, y decidimos inscribirnos en la categoría demo.\
-Usando el motor de novelas visuales llamado [RenPy](https://www.renpy.org/) creamos este juego de decisiones llamado __Dysaster__.
-
 ## ⛓️ Limitaciones <a name = "limitations"></a>
 
 El juego está limitado al primer nivel.\
