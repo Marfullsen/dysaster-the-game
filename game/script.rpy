@@ -38,6 +38,8 @@ image bg boat = im.Scale('bg boat.jpg', width, height)
 # Textos del narrador & el contexto.
 define texto_centrado = Character(None, what_xalign=0.5, what_text_align=0.5, text_xpos=0.5, window_yalign=0.5)
 define contexto = Character(None, what_xalign=0.5, what_text_align=0.5, text_xpos=0.5, window_yalign=0.5, what_color="#e79600")
+define warning_box = Character(None, window_xalign=0.5, window_yalign=0.5, what_xalign=0.5, what_yalign=0.5, text_xpos=0.5, text_ypos=0.5, what_text_align=0.5, interact=False)
+define warning_title = "{b}{color=#f00}Disclaimer{/color}{/b}"
 
 # Helpers
 #texto_centrado "{i}{/i}"
@@ -49,7 +51,22 @@ label start:
     stop music fadeout 2.0
 
     # Al inicio el fondo es de color negro.
+    # Disclaimer
+    warning_box "[warning_title]\n\
+    El Siguiente trabajo es una obra de ficción que\
+    puede contener material sensible y/u ofensivo\
+    para algunas personas, cualquier parecido con\
+    la realidad sobre personajes, diálogos, elementos\
+    y/o historia es pura coincidencia. Todo el contenido\
+    presentado en este juego es total y completamente\
+    ficticio. Al haber iniciado el archivo ejecutable\
+    del juego (dysaster.exe), usted renuncia automaticamente a\
+    toda posible demanda u otra acción legal en contra\
+    del Team Walala y a todos sus integrantes.\
+    \n© 2021 Team Walala"
 
+    pause(1.0)
+    
     # Fondo prisión.
     scene bg prison
 
@@ -71,7 +88,7 @@ label start:
 
     # Aparece uno de los protagonistas.
     show fugitive one:
-        ease .5 zoom 1.5 xoffset 500 yoffset 50
+        ease 1 zoom 1.5 xoffset 500 yoffset 50
         #moves right 100px, bottom 50px.
         #set to 0 when you return later.
 
@@ -106,13 +123,9 @@ label start:
 
         contexto "Contexto: \n{i}Llega a un pequeño muelle...{/i}"
 
-        anon_n "Perfecto, esto me sera útil..."
+        anon_n "¡Perfecto, esto me será útil!"
 
-        contexto "Contexto: \n{i}Se sube a una lancha y arranca{/i}"
-
-        anon_n "¡Hasta nunca, Idiotas!"
-
-        contexto "Contexto: \n{i}se aleja en la lancha{/i}"
+        contexto "Contexto: \n{i}Encuentra una lancha{/i}"
 
         menu:
             "¿Debería revisar las provisiones?"
@@ -120,13 +133,22 @@ label start:
                 jump revisar_provisiones
             "Revisar mas tarde":
                 # Bad Ending
+                contexto "Contexto: \n{i}Se sube a una lancha y arranca{/i}"
+                anon_n "¡Hasta nunca, Idiotas!"
+                contexto "Contexto: \n{i}se aleja en la lancha{/i}"
                 texto_centrado "{i}No las revisa y se adentra en altamar{p}Al tercer día se queda sin provisiones{p}{/i}"
                 texto_centrado "{i}Una semana después muere por el hambre y la insolación{/i}"
                 "Bad Ending."
                 return
 
     label revisar_provisiones:
-        "Con esto podre vivir algunos días más"
+        "Con esto podré vivir algunos días más"
+
+        contexto "Contexto: \n{i}Se sube a una lancha y arranca{/i}"
+
+        anon_n "¡Hasta nunca, Idiotas!"
+
+        contexto "Contexto: \n{i}se aleja en la lancha{/i}"
 
         texto_centrado "{i}2 Días después...{/i}"
 
@@ -163,6 +185,44 @@ label start:
                                 empresario "Prefiero el termino \"Excentrico\"... "
                                 empresario "¡Hey!, ¿no se supone que deberías estar en prisión o algo?"
                                 narco "Los tiempos han cambiado mi amigo, dime, ¿cómo es que alguien como tú terminó este lugar?"
+
+                                empresario "Bueno..."
+                                empresario "En verdad es algo vergonzoso de admitir..."
+                                empresario "Pero como tú ya sabrás, hace 6 años cuando condenaste al mundo a este apocalipsis zombie, o algo así..."
+                                narco "¡Que soy inocente maldita sea, y siempre lo he sido!"
+                                empresario "Como sea, me di la tarea de intentar salvar la mayor cantidad de vidas posibles,"
+                                empresario "Construyendo una flota de super cruceros o ciudades flotantes como me gusta llamarlas a mi,"
+                                empresario "En donde la humanidad podría vivir tranquila y sin tener que preocuparse por esos infectados,"
+                                empresario "Pues es más que obvio que alguno de ellos jamás aparecería en medio del mar ..."
+
+                                narco "Ve al grano de una vez y ya!"
+                                empresario "Vaya tipo más impaciente, en fin, hace poco realizamos en mi crucero personal una gran celebración"
+                                empresario "Debí de haber bebido mucho alcohol porque lo último que recuerdo es que estaba sentando en una baranda cantando"
+                                empresario "Quiza perdí el equilibrio lo que llevó a que me cayera al mar"
+                                narco "..."
+                                narco "¿Aún tienen alcohol despues de todos estos años?"
+                                empresario "Eh..."
+                                empresario "Cambiando de tema, necesito regresar a mi barco así que voy a necesitar un aventón"
+                                empresario "¿Qué me dices?, ¿podrías ayudarme a volver?"
+                                empresario "Sería por unos buenos billetes o si lo prefieres puedo conseguirte una de las mejores habitaciones en mi barco"
+                                empresario "¿Qué te parece?"
+                                narco "Veo que ustedes los {i}snobs{/i} nunca salen de sus burbujas"
+                                narco "Primero, el dinero en esta era no es nada más que un simple papel sin valor"
+                                narco "Segundo, no tengo ni la menor idea en dónde pueda estar tu susodicho crucero y creo que tú tampoco"
+                                narco "Y tercero, ahora que estás aquí, tanto mis provisiones como el combustible de esta lancha estan al mínimo"
+                                narco "así que a menos que encontremos algo para reabastecernos, dudo que lleguemos con vida a la proxima semana"
+                                empresario "..."
+
+                                texto_centrado "Esa misma noche..."
+                                contexto "Una feroz tormenta en altamar"
+                                empresario "¡¡Vamos a morir!!"
+                                narco "¡Cierra el hocico y sujétate de algo!, no he llegado tan lejos solo para terminar muriendo por una maldita tormenta"
+                                narco "Como si algo como esto pudiera detenerme"
+                                contexto "Una enorme ola está por golpear la lancha"
+                                empresario "¡Gira!, ¡¡GIRA!!"
+                                contexto "La ola hunde la lancha"
+                                scene black
+                                texto_centrado "Continuará...{p}(sólo si ganamos la DevJam ;) )"
                                 "Good Ending."
                             "Dejarlo a su suerte":
                                 # Bad ending
