@@ -1,57 +1,69 @@
 ﻿# Guión del juego.
 
-# Tamaño de la pantalla.
-define width  = 1280
-define height = 720
+# Inicialización de los elementos utilizados.
+init:
 
-# Personajes principales.
-# Don Nacho
-define color_nombre_narco = "#FF8200"
-define anon_n = Character("???", color=color_nombre_narco)
-define narco = Character("Don Nacho", color=color_nombre_narco) # Ignacio Villanueva Alcallaga
+    # Título de la ventana
+    $ config.window_title = "Dysaster, the game - DevJam CITT 2021"
 
-# Los demás.
-define naufrago = Character("Naufrago", color="#5599ff")
-define empresario = Character("Harrison", color="#5599ff") # Robert Bobby harrison
-define waton = Character("Jimeno") # Jimeno Montoya
-define mecanica = Character("Lili") # Liliana Oliviera
+    # Tamaño de la pantalla.
+    define width  = 1280
+    define height = 720
 
-# Personajes secundarios.
-define guardia_1 = Character("Guardia 1", color="#584f63")
-define guardia_2 = Character("Guardia 2", color="#aaa")
-define guardia_3 = Character("Guardia 3", color="#a52c2b")
-define guardia_4 = Character("Guardia 4", color="#a7a223")
+    # Personajes principales.
+    ##
+    # Don Nacho
+    define color_nombre_narco = "#FF8200"
+    define anon_n = Character("???", color=color_nombre_narco)
+    define narco = Character("Don Nacho", color=color_nombre_narco) # Ignacio Villanueva Alcallaga
+    ##
+    # Los demás.
+    define naufrago = Character("Naufrago", color="#5599ff")
+    define empresario = Character("Harrison", color="#5599ff") # Robert Bobby harrison
+    define waton = Character("Jimeno") # Jimeno Montoya
+    define mecanica = Character("Lili") # Liliana Oliviera
 
-# Fondos de cada escena.
-# Escala de las imágenes.
-# Modelo a seguir: image bg NOMBRE = im.Scale('bg NOMBRE.EXT', width, height)
-image bg guard_1 = im.Scale('bg guard_1.png', width, height)
-image bg guard_2 = im.Scale('bg guard_2.png', width, height)
-image bg guard_3 = im.Scale('bg guard_3.png', width, height)
-image bg guard_4 = im.Scale('bg guard_4.png', width, height)
-image bg prison = im.Scale('bg prison.jpg', width, height)
-image bg norte_sur = im.Scale('bg norte_sur.png', width, height)
-image bg zombies = im.Scale('bg zombies.jpg', width, height)
-image bg boat = im.Scale('bg boat.jpg', width, height)
-image bg bodega = im.Scale('bg bodega.png', width, height)
+    # Personajes secundarios.
+    define guardia_1 = Character("Guardia 1", color="#584f63")
+    define guardia_2 = Character("Guardia 2", color="#aaa")
+    define guardia_3 = Character("Guardia 3", color="#a52c2b")
+    define guardia_4 = Character("Guardia 4", color="#a7a223")
 
-# Otras variables
-default items_bodega = set()
+    # Fondos de cada escena escalados.
+    image bg guard_1 = im.Scale('bg guard_1.png', width, height)
+    image bg guard_2 = im.Scale('bg guard_2.png', width, height)
+    image bg guard_3 = im.Scale('bg guard_3.png', width, height)
+    image bg guard_4 = im.Scale('bg guard_4.png', width, height)
+    image bg prison = im.Scale('bg prison.jpg', width, height)
+    image bg norte_sur = im.Scale('bg norte_sur.png', width, height)
+    image bg zombies = im.Scale('bg zombies.jpg', width, height)
+    image bg boat = im.Scale('bg boat.jpg', width, height)
+    image bg waves = im.Scale('bg waves.jpg', width, height)
+    image bg bodega = im.Scale('bg bodega.png', width, height)
+    image bg beach = im.Scale('bg beach.jpg', width, height)
+    ## Modelo a seguir:
+    ## image bg NOMBRE = im.Scale('bg NOMBRE.EXT', width, height)
 
-# Textos del narrador & el contexto.
-define texto_centrado = Character(None, what_xalign=0.5, what_text_align=0.5, text_xpos=0.5, window_yalign=0.5)
-define contexto = Character(None, what_xalign=0.5, what_text_align=0.5, text_xpos=0.5, window_yalign=0.5, what_color="#e79600")
-define warning_box = Character(None, window_xalign=0.5, window_yalign=0.5, what_xalign=0.5, what_yalign=0.5, text_xpos=0.5, text_ypos=0.5, what_text_align=0.5, interact=False)
-define warning_title = "{b}{color=#f00}Disclaimer{/color}{/b}"
+    # Otras variables
+    default items_bodega = set()
 
-# Helpers
-#texto_centrado "{i}{/i}"
+    # Textos del narrador & el contexto.
+    define texto_centrado = Character(None, what_xalign=0.5, what_text_align=0.5, text_xpos=0.5, window_yalign=0.5)
+    define contexto = Character(None, what_xalign=0.5, what_text_align=0.5, text_xpos=0.5, window_yalign=0.5, what_color="#e79600")
+    define warning_box = Character(None, window_xalign=0.5, window_yalign=0.5, what_xalign=0.5, what_yalign=0.5, text_xpos=0.5, text_ypos=0.5, what_text_align=0.5, interact=False)
+    define warning_title = "{b}{color=#f00}Disclaimer{/color}{/b}"
+
+    # Helpers
+    #texto_centrado "{i}{/i}"
 
 # Se inicia el juego.
 label start:
+    $ save_name = "iNiCiO"
 
     # Detener la música del menú principal.
     stop music fadeout 2.0
+
+    $ renpy.music.play('/audio/bg-theme.mp3')
 
     # Al inicio el fondo es de color negro.
     # Disclaimer
@@ -103,7 +115,11 @@ label start:
 
     scene bg zombies
     #contexto "Contexto: \n{i}Se acerca una horda de infectados{/i}"
+
     scene bg norte_sur
+
+    $ save_name = "eL eScAPe"
+
     menu:
         "¿Hacia dónde debería correr?"
         "Correr hacia el norte":
@@ -153,7 +169,9 @@ label start:
 
         #contexto "Contexto: \n{i}se aleja en la lancha{/i}"
 
+        scene black
         texto_centrado "{i}2 Días después...{/i}"
+        scene bg boat
 
         menu:
             "El combustible esta empezando a escasear"
@@ -206,7 +224,7 @@ label start:
                                 empresario "Debí de haber bebido mucho alcohol porque lo último que recuerdo es que estaba sentando en una baranda cantando"
                                 empresario "Quizá perdí el equilibrio lo que llevó a que me cayera al mar"
                                 narco "..."
-                                narco "¿Aún tienen alcohol despues de todos estos años?"
+                                narco "¿Aún tienen alcohol después de todos estos años?"
                                 empresario "Eh..."
                                 empresario "Cambiando de tema, necesito regresar a mi barco así que voy a necesitar un aventón"
                                 empresario "¿Qué me dices?, ¿podrías ayudarme a volver?"
@@ -224,14 +242,23 @@ label start:
                                 empresario "¡¡Vamos a morir!!"
                                 narco "¡Cierra el hocico y sujétate de algo, no he llegado tan lejos solo para terminar muriendo por una maldita tormenta!"
                                 narco "Como si algo como esto pudiera detenerme"
-                                contexto "Una enorme ola está por golpear la lancha"
+
+                                #contexto "Una enorme ola está por golpear la lancha"
+                                scene bg waves
+
                                 empresario "¡Gira!, ¡¡GIRA!!"
                                 contexto "La ola hunde la lancha"
 
-                                contexto "Contexto: Llegan a una playa pequeña"
+                                scene bg beach
+                                #contexto "Contexto: Llegan a una playa pequeña"
+
+                                show harrison one:
+                                    ease .5 zoom 1.5 xoffset 800 yoffset 50
+                                show fugitive one:
+                                    ease .5 zoom 1.5 xoffset 100 yoffset 50
 
                                 # Tercera parte
-                                empresario "Cómo me duele la cabeza"
+                                empresario "¡Cómo me duele la cabeza!"
                                 empresario "Hmm... ¿en dónde está ese sujeto?"
                                 contexto "Don Nacho a lo lejos observando hacia el horizonte"
                                 narco "¿Sigues con vida, eh?"
