@@ -254,13 +254,13 @@ label start:
 
                                 show harrison one:
                                     ease .5 zoom 1.5 xoffset 800 yoffset 50
-                                show fugitive one:
-                                    ease .5 zoom 1.5 xoffset 100 yoffset 50
 
                                 # Tercera parte
                                 empresario "¡Cómo me duele la cabeza!"
                                 empresario "Hmm... ¿en dónde está ese sujeto?"
                                 contexto "Don Nacho a lo lejos observando hacia el horizonte"
+                                show fugitive one:
+                                    ease .5 zoom 1.5 xoffset 100 yoffset 50
                                 narco "¿Sigues con vida, eh?"
                                 empresario "¿Alguna idea de dónde estamos?"
                                 narco "Colombia"
@@ -346,6 +346,7 @@ label start:
                                                 scene bg bodega
                                                 empresario "Ya anocheció"
                                                 narco "¡Hay que andar con cautela, si hay infectados cerca, estamos bien jodidos, esos bastardos son más letales en la oscuridad!"
+                                                scene bg zombies
                                                 contexto "Ambos hombres salen de la bodega"
                                                 empresario "¡Oh,no! ¡Mira hacia allá, infectados!"
                                                 narco "Espera, no saben que nos encontramos aquí... Aun..."
