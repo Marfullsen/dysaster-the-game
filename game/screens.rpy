@@ -582,7 +582,7 @@ style game_menu_label_text:
 style return_button:
     xpos gui.navigation_xpos
     yalign 1.0
-    yoffset -30
+    yoffset -70
 
 
 ## About screen ################################################################
