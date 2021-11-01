@@ -41,8 +41,6 @@ init:
     image bg waves = im.Scale('bg waves.jpg', width, height)
     image bg bodega = im.Scale('bg bodega.png', width, height)
     image bg beach = im.Scale('bg beach.jpg', width, height)
-    ## Modelo a seguir:
-    ## image bg NOMBRE = im.Scale('bg NOMBRE.EXT', width, height)
 
     # Otras variables
     default items_bodega = set()
@@ -52,9 +50,6 @@ init:
     define contexto = Character(None, what_xalign=0.5, what_text_align=0.5, text_xpos=0.5, window_yalign=0.5, what_color="#e79600")
     define warning_box = Character(None, window_xalign=0.5, window_yalign=0.5, what_xalign=0.5, what_yalign=0.5, text_xpos=0.5, text_ypos=0.5, what_text_align=0.5, interact=False)
     define warning_title = "{b}{color=#f00}Disclaimer{/color}{/b}"
-
-    # Helpers
-    #texto_centrado "{i}{/i}"
 
 # Se inicia el juego.
 label start:
@@ -86,7 +81,7 @@ label start:
     scene bg prison
 
     # Hablado por narrador, centrado en el eje X e Y.
-    texto_centrado "{i}Prisión de Guantanamo, Cuba{/i}"
+    texto_centrado "{i}Prisión de Guantánamo, Cuba{/i}"
 
     # Personajes secundarios comienzan el diálogo.
     scene bg guard_1
@@ -191,6 +186,7 @@ label start:
                         menu:
                             "¿Y este como logró llegar hasta aquí?"
                             "Rescatarlo":
+                                $ save_name = "SeGunDo-PeRsOnAjE"
                                 contexto "{i}Rescata a una persona que flotaba aún con vida en el mar...{/i}"
                                 contexto "{i}Algunos minutos después el naufrago despierta...{/i}"
                                 show harrison one:
