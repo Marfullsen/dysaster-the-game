@@ -7,9 +7,9 @@
 <div align="center">
 
 [![DevJam](https://img.shields.io/badge/DevJam-2021-orange.svg)](https://docs.google.com/forms/d/e/1FAIpQLSdQFEUlpttL8WKLO-f7Y4vaY5h5CQIiD4bUcH9Q2Uu4XNGE9A/viewform)
-[![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/pulls)
+[![Status](https://img.shields.io/badge/status-active-success.svg)](https://github.com/Marfullsen/dysaster-the-game/releases/download/v0.1'/Dysaster-Demo.0.1.zip)
+[![LinkGithub](https://img.shields.io/badge/Descargar-Aquí-lightgray.svg)](https://github.com/Marfullsen/dysaster-the-game/releases/download/v0.1'/Dysaster-Demo.0.1.zip)
+[![LinkMega](https://img.shields.io/badge/Descargar-MEGA-red.svg)](https://mega.nz/file/hwsmiLLZ#a0zaN0IOcbFtz6-nyeobp5S1ET0ZO6kWOfkqQs8ltl0)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.md)
 
 </div>
@@ -40,12 +40,12 @@
 
 ## 💡 ¿Qué es Dysaster? <a name = "demo"></a>
 
-Dysaster es una novela visual (tambien llamado _juego de decisiones_), con la que participamos en el evento organizado por el Citt llamado "DevJam",\
+Dysaster es una novela visual (tambien llamado _juego de decisiones_), con la que participamos en el evento organizado por el Citt llamado "DevJam",
 en este evento los estudiantes de diversas carreras presentan todo tipo de juegos, personajes, ideas, etc.
 
 ## 🏁 Sobre nuestro team
 
-Conformamos un equipo de 5 integrantes, y decidimos inscribirnos en la categoría **demo*.\
+Conformamos un equipo de 5 integrantes, y decidimos inscribirnos en la categoría *demo*.
 Usando el motor de novelas visuales llamado [RenPy](https://www.renpy.org/), creamos este juego de decisiones llamado __Dysaster__.
 
 ## 🧐 Categorías <a name = "categorias"></a>
@@ -58,17 +58,17 @@ La DevJam fue organizada por el [CTTT](https://beacons.page/citt.duocuc), en [la
 Además de esto, se hará una premiación del juego más votado.
 ## ⛓️ Limitaciones <a name = "limitations"></a>
 
-El juego está limitado al primer nivel.\
+El juego está limitado al primer nivel.
 Los contenidos presentados podrían variar considerablemente a través del tiempo en futuras versiones.
 
 ## 🚀 Planes a futuro <a name = "future_scope"></a>
 
-Se planea continuar con el desarrollo cambiando en un futuro el motor [RenPy](https://www.renpy.org/) por "Unity",\
+Se planea continuar con el desarrollo cambiando en un futuro el motor [RenPy](https://www.renpy.org/) por "Unity",
 esto aún está en _veremos_ pues se está trabajando en la capacitación de los integrantes.
 
 ## 🏁 Lanzando el juego <a name = "getting_started"></a>
 
-El juego usa el motor [RenPy](https://www.renpy.org/) para su desarrollo (basado en Python),\
+El juego usa el motor [RenPy](https://www.renpy.org/) para su desarrollo (basado en Python),
 para la versión de producción se generó un archivo ejecutable que **No necesita Python**.
 
 - Ver [versión de oficial](#usage)
@@ -108,10 +108,14 @@ También está disponible en [Mega haciendo click aquí](https://mega.nz/file/hw
 - [@TheHasen](https://github.com/TheHasen) - Historia, diálogos, ideas y diseño.
 - [@Marfullsen](https://github.com/Marfullsen) - Programación y diseño UI/UX.
 - [@OcikoTorzido](https://github.com/Ocikotorzido) - Dibujos, bocetos, generar ideas.
-- [@GustavoNeiraGonzalez](https://github.com/GustavoNeiraGonzalez) - generar ideas.
-- [@alvmoralesm](https://github.com/alvmoralesm) - generar ideas.
+- [@GustavoNeiraGonzalez](https://github.com/GustavoNeiraGonzalez) - Generar ideas.
+- [@alvmoralesm](https://github.com/alvmoralesm) - Generar ideas.
 
-## 🎉 Agradecimientos <a name = "acknowledgments"></a>
+## 🎉 Agradecimientos, referencias y menciones <a name = "acknowledgments"></a>
 
 - Organizadores del evento.
-- Freepik
+  - Julio Herrera
+  - Vanessa Sáez
+
+- [Freepik](https://www.freepik.com/free-photos-vectors/)
+- [Documentación oficial de RenPy](https://www.renpy.org/doc/html/index.html)
