@@ -34,6 +34,7 @@
 - [Configurando la dev](#dev)
 - [Jugar la versión oficial](#usage)
 - [Tecnologías](#tech_stack)
+- [Banda sonora](#soundtrack)
 - [Autores](#authors)
 - [Agradecimientos](#acknowledgments)
 
@@ -102,6 +103,12 @@ También está disponible en [Mega haciendo click aquí](https://mega.nz/file/hw
 ## ⛏️ Tecnologías usadas <a name = "tech_stack"></a>
 
 - [RenPy](https://www.renpy.org/) - Motor para crear novelas visuales (Juegos de decisiones).
+
+## Banda Sonora  <a name = "soundtrack"></a>
+
+El Soundtrack del juego está disponible en formato mp3
+- [main-menu-voice.mp3](./game/audio/main-menu-voice.mp3)
+- [bg-theme.mp3](./game/audio/bg-theme.mp3)
 
 ## ✍️ Autores <a name = "authors"></a>
 
