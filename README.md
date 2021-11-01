@@ -18,6 +18,12 @@
     <br> 
 </p>
 
+<p align="center">
+  <a href="https://youtu.be/0xikvMZl2nY" rel="noopener">
+    <img src="./docs/img/video-yt.png" alt="Vídio-Yutup">
+  </a>
+</p>
+
 ## 📝 Contenidos
 
 - [¿Qué es Dysaster?](#demo)
@@ -89,7 +95,9 @@ Para la versión de desarrollo se necesita **[RenPy](https://www.renpy.org/)**
 
 ## 🎈 Jugar la versión oficial <a name="usage"></a>
 
-La versión oficial aparecerá aquí en cualquier momento.
+La versión oficial puede [descargarse aquí desde la release oficial en Github](https://github.com/Marfullsen/dysaster-the-game/releases/download/v0.1'/Dysaster-Demo.0.1.zip).
+
+También está disponible en [Mega haciendo click aquí](https://mega.nz/file/hwsmiLLZ#a0zaN0IOcbFtz6-nyeobp5S1ET0ZO6kWOfkqQs8ltl0).
 
 ## ⛏️ Tecnologías usadas <a name = "tech_stack"></a>
 
