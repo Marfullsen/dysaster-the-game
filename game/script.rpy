@@ -236,15 +236,15 @@ label start:
                                 narco "Y tercero, ahora que estás aquí, tanto mis provisiones como el combustible de esta lancha estan al mínimo"
                                 narco "así que a menos que encontremos algo para reabastecernos, dudo que lleguemos con vida a la próxima semana"
                                 empresario "..."
-
+                                scene black
                                 texto_centrado "Esa misma noche..."
+                                scene bg waves
                                 contexto "Una feroz tormenta en altamar"
                                 empresario "¡¡Vamos a morir!!"
                                 narco "¡Cierra el hocico y sujétate de algo, no he llegado tan lejos solo para terminar muriendo por una maldita tormenta!"
                                 narco "Como si algo como esto pudiera detenerme"
 
                                 #contexto "Una enorme ola está por golpear la lancha"
-                                scene bg waves
 
                                 empresario "¡Gira!, ¡¡GIRA!!"
                                 contexto "La ola hunde la lancha"
@@ -291,6 +291,7 @@ label start:
                                         empresario "¡Al demonio con esto!"
                                         contexto "Harrison se lanza al mar"
                                         contexto "Ambos hombres comienzan a nadar en dirección a Puerto Bolivar"
+                                        scene black
                                         texto_centrado "Horas más tarde..."
                                         contexto "Puerto Bolivar, tras haber estado buscando por provisiones y herramientas por horas"
                                         empresario "¡Encontré algo!, ¡ayúdame a levantar esto!"
@@ -340,12 +341,13 @@ label start:
                                                 narco "Con esto sera suficiente"
                                                 empresario "Bien, mejor que nos largemos cuanto antes de aquí, este lugar me eseta dando escalofríos"
                                                 narco "Primero hay que encontrar algún vehículo, sino dudo que podamos salir intactos de esta zona"
+                                                scene bg zombies
                                                 contexto "Una horda de infectados se esta acercando al área"
+                                                scene bg bodega
                                                 empresario "Ya anocheció"
                                                 narco "¡Hay que andar con cautela, si hay infectados cerca, estamos bien jodidos, esos bastardos son más letales en la oscuridad!"
                                                 contexto "Ambos hombres salen de la bodega"
                                                 empresario "¡Oh,no! ¡Mira hacia allá, infectados!"
-                                                scene bg zombies
                                                 narco "Espera, no saben que nos encontramos aquí... Aun..."
                                                 empresario "¡¡Estamos perdidos!!, ¡es nuestro fin!"
                                                 scene black
