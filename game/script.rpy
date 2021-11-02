@@ -365,7 +365,7 @@ label start:
                     play sound "/audio/ding-effect.mp3"
                     texto_centrado "Botiquines y medicinas encontradas"
                 "Revisar pequeña caja de metal":
-                    play sound "/audio/doble-bell-effect.mp3"
+                    play sound "/audio/gun-reload.mp3"
                     texto_centrado "Pistolas 9mm encontradas"
                     if "Revisar pequeño cilindro de metal" in items_bodega:
                         narco "¡Ahora si, con esto mejora nuestra suerte!"
