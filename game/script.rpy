@@ -48,7 +48,7 @@ init:
 
     # Textos del narrador & el contexto.
     define texto_centrado = Character(None, what_xalign=0.5, what_text_align=0.5, text_xpos=0.5, window_yalign=0.5)
-    define contexto = Character(None, what_xalign=0.5, what_text_align=0.5, text_xpos=0.5, window_yalign=0.5, what_color="#e79600")
+    define contexto = Character(None, what_xalign=0.5, what_text_align=0.5, text_xpos=0.5, window_yalign=0.5, what_color="#e79600", what_italic=True)
     define warning_box = Character(None, window_xalign=0.5, window_yalign=0.5, what_xalign=0.5, what_yalign=0.5, text_xpos=0.5, text_ypos=0.5, what_text_align=0.5, interact=False)
     define warning_title = "{b}{color=#f00}Disclaimer{/color}{/b}"
 
