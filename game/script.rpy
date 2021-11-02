@@ -54,6 +54,7 @@ init:
 
 # Se inicia el juego.
 label start: #renpy-graphviz: TITLE
+
     $ save_name = "iNiCiO"
 
     # Detener la música del menú principal.
@@ -188,9 +189,9 @@ label ir_al_sur:
             jump revisar_provisiones
         "Revisar mas tarde":
             # Bad Ending
-            jump revisar_después
+            jump revisar_despues
 
-label revisar_después:
+label revisar_despues:
     contexto "Contexto: \n{i}Se sube a una lancha y arranca{/i}"
     anon_n "¡Hasta nunca, Idiotas!"
     contexto "Contexto: \n{i}se aleja en la lancha{/i}"
@@ -215,20 +216,20 @@ label revisar_provisiones:
     menu:
         "El combustible esta empezando a escasear"
         "Aumentar Velocidad":
-            jump ir_más_rápido
+            jump ir_mas_rapido
         "Disminuir Velocidad":
-            jump ir_más_lento
+            jump ir_mas_lento
 
-label ir_más_rápido:    
+label ir_mas_rapido:    
     # Bad ending
     texto_centrado "{i}Acelera la velocidad y queda sin combustible en altamar{/i}"
     texto_centrado "{i}Días después muere por falta de provisiones{/i}"
     "Bad Ending."
     jump fin
 
-label ir_más_lento:
+
+label ir_mas_lento:
     contexto "Contexto: \n{i}Observa un objeto a cierta distancia en el oceano...{/i}"
-    # contexto "Contexto: \n{i}{/i}"
     menu:
         "¿Pero qué es eso?, ¿será posible...?"
         "Acercarse a examinar":
@@ -236,15 +237,8 @@ label ir_más_lento:
         "Seguir otro rumbo":
             jump seguir_otro_rumbo
 
-label seguir_otro_rumbo:
-    # Bad ending
-    texto_centrado "{i}Terminó llegando a tierra firme y se dió cuenta que había vuelto al punto de inicio...{/i}"
-    texto_centrado "{i}Rápidamente fue descubierto por uno de los guardias que disparó sin dudar{/i}"
-    texto_centrado "{i}No logró llegar muy lejos, fue capturado y llevado a otra penitenciaría.{/i}"
-    "Bad Ending."
-    jump fin
-
 label examinar:
+
     contexto "Contexto: \n{i}Apenas logra distinguir lo que parece una persona que él conocía...{/i}"
     menu:
         "¿Y este como logró llegar hasta aquí?"
@@ -253,6 +247,14 @@ label examinar:
             jump rescatarlo
         "Dejarlo a su suerte":
             jump dejarlo
+
+label seguir_otro_rumbo:
+    # Bad ending
+    texto_centrado "{i}Terminó llegando a tierra firme y se dió cuenta que había vuelto al punto de inicio...{/i}"
+    texto_centrado "{i}Rápidamente fue descubierto por uno de los guardias que disparó sin dudar{/i}"
+    texto_centrado "{i}No logró llegar muy lejos, fue capturado y llevado a otra penitenciaría.{/i}"
+    "Bad Ending."
+    jump fin
 
 label rescatarlo:
     contexto "{i}Rescata a una persona que flotaba aún con vida en el mar...{/i}"
