@@ -123,30 +123,7 @@ label start: #renpy-graphviz: TITLE
         "Correr hacia el sur":
             jump ir_al_sur
 
-label ir_al_sur:
-    scene bg boat
-
-    #contexto "Contexto: \n{i}Llega a un pequeño muelle...{/i}"
-    show lancha agua:
-        ease 1 zoom 1.0 xoffset 300 yoffset 300
-
-    anon_n "¡Perfecto, esto me será útil!"
-
-    #contexto "Contexto: \n{i}Encuentra una lancha{/i}"
-
-    menu:
-        "¿Debería revisar las provisiones?"
-        "Revisar ahora provisiones y nivel de combustible":
-            jump revisar_provisiones
-        "Revisar mas tarde":
-            # Bad Ending
-            jump revisar_después
-
 label ir_al_norte:
-    # Bad ending
-    #texto_centrado "{i}Los guardias suponían que escaparía por el norte{/i}"
-    #extend "{p}{i}No logró llegar muy lejos y quedó rodeado de guardias{/i}"
-    #texto_centrado "{i}Prefirió entregarse y volver a prisión{/i}"
 
     contexto "Contexto: \n{i}Llega a un estacionamiento afuera de la prisión{/i}"
     scene bg parking
@@ -193,6 +170,25 @@ label ir_al_norte:
 
     "Bad Ending."
     return
+
+label ir_al_sur:
+    scene bg boat
+
+    #contexto "Contexto: \n{i}Llega a un pequeño muelle...{/i}"
+    show lancha agua:
+        ease 1 zoom 1.0 xoffset 300 yoffset 300
+
+    anon_n "¡Perfecto, esto me será útil!"
+
+    #contexto "Contexto: \n{i}Encuentra una lancha{/i}"
+
+    menu:
+        "¿Debería revisar las provisiones?"
+        "Revisar ahora provisiones y nivel de combustible":
+            jump revisar_provisiones
+        "Revisar mas tarde":
+            # Bad Ending
+            jump revisar_después
 
 label revisar_después:
     contexto "Contexto: \n{i}Se sube a una lancha y arranca{/i}"
