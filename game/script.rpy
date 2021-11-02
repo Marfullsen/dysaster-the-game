@@ -169,7 +169,7 @@ label ir_al_norte:
     contexto "Contexto: \n{i}Después de un rato, tras estar luchando contra los infectados,{p}termina completamente agotado y cae al piso, mueriendo casi al instante{/i}"
 
     "Bad Ending."
-    return
+    jump fin
 
 label ir_al_sur:
     scene bg boat
@@ -197,7 +197,7 @@ label revisar_después:
     texto_centrado "{i}No las revisa y se adentra en altamar{p}Al tercer día se queda sin provisiones{p}{/i}"
     texto_centrado "{i}Una semana después muere por el hambre y la insolación{/i}"
     "Bad Ending."
-    return
+    jump fin
 
 label revisar_provisiones:
     "Con esto podré vivir algunos días más"
@@ -224,7 +224,7 @@ label ir_más_rápido:
     texto_centrado "{i}Acelera la velocidad y queda sin combustible en altamar{/i}"
     texto_centrado "{i}Días después muere por falta de provisiones{/i}"
     "Bad Ending."
-    return
+    jump fin
 
 label ir_más_lento:
     contexto "Contexto: \n{i}Observa un objeto a cierta distancia en el oceano...{/i}"
@@ -242,7 +242,7 @@ label seguir_otro_rumbo:
     texto_centrado "{i}Rápidamente fue descubierto por uno de los guardias que disparó sin dudar{/i}"
     texto_centrado "{i}No logró llegar muy lejos, fue capturado y llevado a otra penitenciaría.{/i}"
     "Bad Ending."
-    return
+    jump fin
 
 label examinar:
     contexto "Contexto: \n{i}Apenas logra distinguir lo que parece una persona que él conocía...{/i}"
@@ -344,13 +344,13 @@ label dejarlo:
     texto_centrado "{i}Al alejarse se dió cuenta que iba directo a un huracán..."
     extend "{p}Intentó saltar, pero fue peor, murió ahogado y su cuerpo fue arrastrado por el huracán.{/i}"
     "Bad Ending."
-    return
+    jump fin
 
 label tierra:
     # Bad Ending
     "Se mueren"
     "Bad ending"
-    return
+    jump fin
 
 label mar:
     contexto "Don Nacho se tira al mar"
@@ -442,14 +442,15 @@ label linterna:
     scene black
     texto_centrado "Continuará...{p}(sólo si ganamos la DevJam ;) )"
     "Good Ending."
-    return
+    jump fin
 
-label encendedor: # renpy-graphviz: GAMEOVER
+label encendedor:
     # Bad Ending
     "Explotan"
     "Bad Ending"
-    return
+    jump fin
 
-# Se acaba el juego.
-"{b}Fin de la demo 0.1{/b}"
-return
+label fin: # renpy-graphviz: GAMEOVER
+    # Se acaba el juego.
+    "{b}Fin de la demo 0.1{/b}"
+    return
