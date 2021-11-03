@@ -20,7 +20,7 @@
 
 <p align="center">
   <a href="https://mega.nz/file/Zp8x3SaA#bpccNFgemFaHK1nMMg19tuw12__cEeAmmFEijNkA2M0" rel="noopener">
-    <img src="./docs/img/juega-ya.png" alt="Juegar" width="200">
+    <img src="./docs/img/juega-ya.png" alt="Juegar" width="250">
   </a>
 </p>
 
