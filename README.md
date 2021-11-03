@@ -20,7 +20,7 @@
 
 <p align="center">
   <a href="https://mega.nz/file/Zp8x3SaA#bpccNFgemFaHK1nMMg19tuw12__cEeAmmFEijNkA2M0" rel="noopener">
-    <img src="./docs/img/juega-ya.png" alt="Baixar-jogo">
+    <img src="./docs/img/juega-ya.png" alt="Baixar-jogo" width="500" height="500">
   </a>
 </p>
 
@@ -107,7 +107,7 @@ Para la versión de desarrollo se necesita **[RenPy](https://www.renpy.org/)**
 
 <p align="center">
   <a href="https://mega.nz/file/Zp8x3SaA#bpccNFgemFaHK1nMMg19tuw12__cEeAmmFEijNkA2M0" rel="noopener">
-    <img src="./docs/img/download-btn.png" alt="Baixar-jogo">
+    <img src="./docs/img/download-btn.png" alt="Baixar-jogo" width="400">
   </a>
 </p>
 
