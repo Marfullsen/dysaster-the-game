@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="" rel="noopener">
+  <a href="https://github.com/Marfullsen/dysaster-the-game" rel="noopener">
  <img src="./docs/img/dysaster_logo.png" alt="Dysaster-Logo"></a>
 </p>
 <h3 align="center">Dysaster The Game</h3>
@@ -7,8 +7,8 @@
 <div align="center">
 
 [![DevJam](https://img.shields.io/badge/DevJam-2021-orange.svg)](https://docs.google.com/forms/d/e/1FAIpQLSdQFEUlpttL8WKLO-f7Y4vaY5h5CQIiD4bUcH9Q2Uu4XNGE9A/viewform)
-[![Status](https://img.shields.io/badge/status-active-success.svg)](https://github.com/Marfullsen/dysaster-the-game/releases/download/v0.1'/Dysaster-Demo.0.1.zip)
-[![LinkGithub](https://img.shields.io/badge/Descargar-Aquí-lightgray.svg)](https://github.com/Marfullsen/dysaster-the-game/releases/download/v0.1'/Dysaster-Demo.0.1.zip)
+[![Status](https://img.shields.io/badge/status-active-success.svg)](https://github.com/Marfullsen/dysaster-the-game/releases/)
+[![LinkGithub](https://img.shields.io/badge/Descargar-Aquí-lightgray.svg)](https://github.com/Marfullsen/dysaster-the-game/releases/download/v0.1b/Dysaster-0.1b-win.2.11.21.1.zip)
 [![LinkMega](https://img.shields.io/badge/Descargar-MEGA-red.svg)](https://mega.nz/file/Zp8x3SaA#bpccNFgemFaHK1nMMg19tuw12__cEeAmmFEijNkA2M0)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.md)
 
@@ -20,7 +20,7 @@
 
 <p align="center">
   <a href="https://mega.nz/file/Zp8x3SaA#bpccNFgemFaHK1nMMg19tuw12__cEeAmmFEijNkA2M0" rel="noopener">
-    <img src="./docs/img/juega-ya.png" alt="Baixar-jogo" width="500" height="500">
+    <img src="./docs/img/juega-ya.png" alt="Juegar" width="200">
   </a>
 </p>
 
@@ -86,13 +86,13 @@ El juego usa el motor [RenPy](https://www.renpy.org/) para su desarrollo (basado
 
 ### Requisitos Previos
 
-Para la versión oficial sólo es necesario descargar el ejecutable oficial.
+Para la versión oficial sólo es bajar y jugar.
 
-Para la versión de desarrollo se necesita **[RenPy](https://www.renpy.org/)**
+Para la versión de desarrollo se necesita **[RenPy](https://www.renpy.org/)** para abrir el juego.
 
 ### Configurando la versión de desarrollo  <a name = "dev"></a>
 
-- Ya instalado [RenPy](https://www.renpy.org/) se procede a descargar este repositorio
+- Ya instalado [RenPy](https://www.renpy.org/) se procede a **descargar/clonar este repositorio**.
 - En caso de descargar comprimido, **se debe extraer dentro de una carpeta**.
 - Corroborar que dentro de la carpeta existe una carpeta llamada **game**
 - Ir a la ruta de RenPy.exe y dejar la carpeta al mismo nivel.
@@ -105,15 +105,21 @@ Para la versión de desarrollo se necesita **[RenPy](https://www.renpy.org/)**
 
 ## 🎈 Jugar la versión oficial <a name="usage"></a>
 
+### La versión oficial puede descargarse [aquí](https://github.com/Marfullsen/dysaster-the-game/releases/download/v0.1b/Dysaster-0.1b-win.2.11.21.1.zip).
+
 <p align="center">
-  <a href="https://mega.nz/file/Zp8x3SaA#bpccNFgemFaHK1nMMg19tuw12__cEeAmmFEijNkA2M0" rel="noopener">
+  <a href="https://github.com/Marfullsen/dysaster-the-game/releases/download/v0.1b/Dysaster-0.1b-win.2.11.21.1.zip" rel="noopener">
     <img src="./docs/img/download-btn.png" alt="Baixar-jogo" width="400">
   </a>
 </p>
 
-La versión oficial puede descargarse [aquí](https://github.com/Marfullsen/dysaster-the-game/releases/download/v0.1'/Dysaster-Demo.0.1.zip).
+### También está disponible en [Mega](https://mega.nz/file/Zp8x3SaA#bpccNFgemFaHK1nMMg19tuw12__cEeAmmFEijNkA2M0).
 
-También está disponible en [Mega](https://mega.nz/file/Zp8x3SaA#bpccNFgemFaHK1nMMg19tuw12__cEeAmmFEijNkA2M0).
+<p align="center">
+  <a href="https://mega.nz/file/Zp8x3SaA#bpccNFgemFaHK1nMMg19tuw12__cEeAmmFEijNkA2M0" rel="noopener">
+    <img src="./docs/img/mega-btn.png" alt="herunterladen-spiel" width="400">
+  </a>
+</p>
 
 ## ⛏️ Tecnologías usadas <a name = "tech_stack"></a>
 
@@ -138,7 +144,6 @@ El Soundtrack del juego está disponible en formato mp3
 - Organizadores del evento.
   - :man_teacher: Julio Herrera
   - :woman_teacher: Vanessa Sáez
-
 - :globe_with_meridians: [Freepik](https://www.freepik.com/free-photos-vectors/)
 - :globe_with_meridians: [Documentación oficial de RenPy](https://www.renpy.org/doc/html/index.html)
 - :globe_with_meridians: [Emojis para Github](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md)
