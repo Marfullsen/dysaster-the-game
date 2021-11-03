@@ -9,7 +9,7 @@
 [![DevJam](https://img.shields.io/badge/DevJam-2021-orange.svg)](https://docs.google.com/forms/d/e/1FAIpQLSdQFEUlpttL8WKLO-f7Y4vaY5h5CQIiD4bUcH9Q2Uu4XNGE9A/viewform)
 [![Status](https://img.shields.io/badge/status-active-success.svg)](https://github.com/Marfullsen/dysaster-the-game/releases/download/v0.1'/Dysaster-Demo.0.1.zip)
 [![LinkGithub](https://img.shields.io/badge/Descargar-Aquí-lightgray.svg)](https://github.com/Marfullsen/dysaster-the-game/releases/download/v0.1'/Dysaster-Demo.0.1.zip)
-[![LinkMega](https://img.shields.io/badge/Descargar-MEGA-red.svg)](https://mega.nz/file/hwsmiLLZ#a0zaN0IOcbFtz6-nyeobp5S1ET0ZO6kWOfkqQs8ltl0)
+[![LinkMega](https://img.shields.io/badge/Descargar-MEGA-red.svg)](https://mega.nz/file/Zp8x3SaA#bpccNFgemFaHK1nMMg19tuw12__cEeAmmFEijNkA2M0)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.md)
 
 </div>
@@ -19,8 +19,8 @@
 </p>
 
 <p align="center">
-  <a href="https://youtu.be/0xikvMZl2nY" rel="noopener">
-    <img src="./docs/img/video-yt.png" alt="Vídio-Yutup">
+  <a href="https://mega.nz/file/Zp8x3SaA#bpccNFgemFaHK1nMMg19tuw12__cEeAmmFEijNkA2M0" rel="noopener">
+    <img src="./docs/img/juega-ya.png" alt="Baixar-jogo">
   </a>
 </p>
 
@@ -41,13 +41,19 @@
 
 ## 💡 ¿Qué es Dysaster? <a name = "demo"></a>
 
-Dysaster es una novela visual (tambien llamado _juego de decisiones_), con la que participamos en el evento organizado por el Citt llamado "DevJam",
-en este evento los estudiantes de diversas carreras presentan todo tipo de juegos, personajes, ideas, etc.
+Dysaster es una novela visual (_juego de decisiones_) estilo _survival_/terror, el cual se ambienta en un mundo azotado por una infección zombie.
+
+## :detective: Trama 
+
+Un peligroso criminal huye de una prisión de máxima seguridad, a medida que la trama avanza se irán sumando más personajes a la historia, juntos deberán sortear distintas dificultades en una odisea mientras tratan de sobrevivir.
+
+## :shamrock: Participación en la _DevJam_
+
+El juego participó en la tercera _DevJam_ organizada por el CITT, dónde estudiantes de diversas carreras desarrollaron videojuegos.
 
 ## 🏁 Sobre nuestro team
 
-Conformamos un equipo de 5 integrantes, y decidimos inscribirnos en la categoría *demo*.
-Usando el motor de novelas visuales llamado [RenPy](https://www.renpy.org/), creamos este juego de decisiones llamado __Dysaster__.
+Conformamos un equipo de 5 integrantes, y decidimos inscribirnos en la categoría *demo*, usando el motor de novelas visuales llamado [RenPy](https://www.renpy.org/), creamos este juego de decisiones llamado __Dysaster__.
 
 ## 🧐 Categorías <a name = "categorias"></a>
 
@@ -59,18 +65,21 @@ La DevJam fue organizada por el [CTTT](https://beacons.page/citt.duocuc), en [la
 Además de esto, se hará una premiación del juego más votado.
 ## ⛓️ Limitaciones <a name = "limitations"></a>
 
-El juego está limitado al primer nivel.
-Los contenidos presentados podrían variar considerablemente a través del tiempo en futuras versiones.
+El juego está limitado al primer nivel y los contenidos presentados en esta documentación podrían variar considerablemente a través del tiempo en futuras versiones.
 
 ## 🚀 Planes a futuro <a name = "future_scope"></a>
 
-Se planea continuar con el desarrollo cambiando en un futuro el motor [RenPy](https://www.renpy.org/) por "Unity",
-esto aún está en _veremos_ pues se está trabajando en la capacitación de los integrantes.
+Se planea continuar con el desarrollo cambiando en un futuro el motor [RenPy](https://www.renpy.org/) por "Unity", esto aún está en _veremos_ pues se está trabajando en la capacitación del equipo.
 
-## 🏁 Lanzando el juego <a name = "getting_started"></a>
+## 🏁 Desarrollo del juego <a name = "getting_started"></a>
 
-El juego usa el motor [RenPy](https://www.renpy.org/) para su desarrollo (basado en Python),
-para la versión de producción se generó un archivo ejecutable que **No necesita Python**.
+El juego usa el motor [RenPy](https://www.renpy.org/) para su desarrollo (basado en Python), sin embargo, ¡la versión oficial **No necesita Python**, llegar y jugar!
+
+<p align="center">
+  <a href="https://youtu.be/0xikvMZl2nY" rel="noopener">
+    <img src="./docs/img/video-yt.png" alt="Vídio-Yutup">
+  </a>
+</p>
 
 - Ver [versión de oficial](#usage)
 - Ver [versión de desarrollo](#dev)
@@ -96,33 +105,40 @@ Para la versión de desarrollo se necesita **[RenPy](https://www.renpy.org/)**
 
 ## 🎈 Jugar la versión oficial <a name="usage"></a>
 
-La versión oficial puede [descargarse aquí desde la release oficial en Github](https://github.com/Marfullsen/dysaster-the-game/releases/download/v0.1'/Dysaster-Demo.0.1.zip).
+<p align="center">
+  <a href="https://mega.nz/file/Zp8x3SaA#bpccNFgemFaHK1nMMg19tuw12__cEeAmmFEijNkA2M0" rel="noopener">
+    <img src="./docs/img/download-btn.png" alt="Baixar-jogo">
+  </a>
+</p>
 
-También está disponible en [Mega haciendo click aquí](https://mega.nz/file/hwsmiLLZ#a0zaN0IOcbFtz6-nyeobp5S1ET0ZO6kWOfkqQs8ltl0).
+La versión oficial puede descargarse [aquí](https://github.com/Marfullsen/dysaster-the-game/releases/download/v0.1'/Dysaster-Demo.0.1.zip).
+
+También está disponible en [Mega](https://mega.nz/file/Zp8x3SaA#bpccNFgemFaHK1nMMg19tuw12__cEeAmmFEijNkA2M0).
 
 ## ⛏️ Tecnologías usadas <a name = "tech_stack"></a>
 
 - [RenPy](https://www.renpy.org/) - Motor para crear novelas visuales (Juegos de decisiones).
 
-## Banda Sonora  <a name = "soundtrack"></a>
+## :musical_score: Banda Sonora  <a name = "soundtrack"></a>
 
 El Soundtrack del juego está disponible en formato mp3
-- [main-menu-voice.mp3](./game/audio/main-menu-voice.mp3)
-- [bg-theme.mp3](./game/audio/bg-theme.mp3)
+- :microphone:	[main-menu-voice.mp3](./game/audio/main-menu-voice.mp3)
+- :musical_note: [bg-theme.mp3](./game/audio/bg-theme.mp3)
 
 ## ✍️ Autores <a name = "authors"></a>
 
-- [@TheHasen](https://github.com/TheHasen) - Historia, diálogos, ideas y diseño.
-- [@Marfullsen](https://github.com/Marfullsen) - Programación y diseño UI/UX.
-- [@OcikoTorzido](https://github.com/Ocikotorzido) - Dibujos, bocetos, generar ideas.
-- [@GustavoNeiraGonzalez](https://github.com/GustavoNeiraGonzalez) - Generar ideas.
-- [@alvmoralesm](https://github.com/alvmoralesm) - Generar ideas.
+- :man_student: [@TheHasen](https://github.com/TheHasen) - Historia, diálogos, ideas y diseño.
+- :man_student: [@Marfullsen](https://github.com/Marfullsen) - Programación y diseño UI/UX.
+- :man_student: [@OcikoTorzido](https://github.com/Ocikotorzido) - Dibujos, bocetos, generar ideas.
+- :man_student: [@GustavoNeiraGonzalez](https://github.com/GustavoNeiraGonzalez) - Generar ideas.
+- :man_student: [@alvmoralesm](https://github.com/alvmoralesm) - Generar ideas.
 
 ## 🎉 Agradecimientos, referencias y menciones <a name = "acknowledgments"></a>
 
 - Organizadores del evento.
-  - Julio Herrera
-  - Vanessa Sáez
+  - :man_teacher: Julio Herrera
+  - :woman_teacher: Vanessa Sáez
 
-- [Freepik](https://www.freepik.com/free-photos-vectors/)
-- [Documentación oficial de RenPy](https://www.renpy.org/doc/html/index.html)
+- :globe_with_meridians: [Freepik](https://www.freepik.com/free-photos-vectors/)
+- :globe_with_meridians: [Documentación oficial de RenPy](https://www.renpy.org/doc/html/index.html)
+- :globe_with_meridians: [Emojis para Github](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md)
