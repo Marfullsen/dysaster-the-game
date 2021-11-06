@@ -6,7 +6,7 @@
 
 <div align="center">
 
-[![DevJam](https://img.shields.io/badge/DevJam-2021-orange.svg)](https://docs.google.com/forms/d/e/1FAIpQLSdQFEUlpttL8WKLO-f7Y4vaY5h5CQIiD4bUcH9Q2Uu4XNGE9A/viewform)
+[![DevJam](https://img.shields.io/badge/DevJam-2021-orange.svg)](https://www.youtube.com/watch?v=Ko8Yl3dOhWQ)
 [![Status](https://img.shields.io/badge/status-active-success.svg)](https://github.com/Marfullsen/dysaster-the-game/releases/)
 [![LinkGithub](https://img.shields.io/badge/Descargar-Aquí-lightgray.svg)](https://github.com/Marfullsen/dysaster-the-game/releases/download/v0.1b/Dysaster-0.1b-win.2.11.21.1.zip)
 [![LinkMega](https://img.shields.io/badge/Descargar-MEGA-red.svg)](https://mega.nz/file/Zp8x3SaA#bpccNFgemFaHK1nMMg19tuw12__cEeAmmFEijNkA2M0)
@@ -14,7 +14,7 @@
 
 </div>
 
-<p align="center"> Novela visual creada para participar en la <i>Tercera DevJam DuocUC 2021</i>.
+<p align="center"> Novela visual ganadora del primer lugar de la <i>Tercera DevJam CITT DuocUC 2021</i>.
     <br> 
 </p>
 
@@ -49,7 +49,13 @@ Un peligroso criminal huye de una prisión de máxima seguridad, a medida que la
 
 ## :shamrock: Participación en la _DevJam_
 
-El juego participó en la tercera _DevJam_ organizada por el CITT, dónde estudiantes de diversas carreras desarrollaron videojuegos.
+<p align="center">
+  <a href="https://github.com/Marfullsen/dysaster-the-game/blob/master/docs/img/devjam-cittduoc.jpg" rel="noopener">
+    <img src="./docs/img/devjam-cittduoc.jpg" alt="banner-devjam" width="400">
+  </a>
+</p>
+
+El juego participó en [la tercera _DevJam_](https://www.youtube.com/watch?v=Ko8Yl3dOhWQ) organizada por el CITT, dónde estudiantes de diversas carreras desarrollaron videojuegos.
 
 ## 🏁 Sobre nuestro team
 
@@ -60,20 +66,33 @@ Conformamos un equipo de 5 integrantes, y decidimos inscribirnos en la categorí
 La DevJam fue organizada por el [CTTT](https://beacons.page/citt.duocuc), en [las bases del concurso](https://docs.google.com/document/d/1vkKhEZsnZai61lMFDaIjd1TNPfzA5MK7DmYnEyKL26g) se especifica que existen tres caterogías:
 - GOTY: Por sus siglas en inglés, "Game of the year", juego del año, donde participan juegos de primera categoría.
 - Demo: Al menos un nivel del juego.
-- Crea tu personaje: Se dibuja un personaje y se presenta para el concurso.
+- Crea tu personaje: Se dibuja un personaje con una historia de fondo y se presenta para el concurso.
 
 Además de esto, se hará una premiación del juego más votado.
+
+## Crítica del jurado
+
+El jurado se vió maravillado por el juego, según se aprecia en [el video del evento](https://youtu.be/Ko8Yl3dOhWQ?t=5383), les recordó juegos como _Heavy Rain_, _Beyond: Two Souls_ e incluso _Prison Break_ por el escape en la playa.
+
+<p align="center">
+  <a href="https://github.com/Marfullsen/dysaster-the-game/blob/master/docs/img/heavy-rain-beyond-two-souls-detroit-became-human.jpg" rel="noopener">
+    <img src="./docs/img/heavy-rain-beyond-two-souls-detroit-became-human.jpg" alt="banner-heavy-rain-beyond-two-souls">
+  </a>
+</p>
+
 ## ⛓️ Limitaciones <a name = "limitations"></a>
 
 El juego está limitado al primer nivel y los contenidos presentados en esta documentación podrían variar considerablemente a través del tiempo en futuras versiones.
 
+**Spoiler**: hay un mapa [disponible aquí](./docs/img/renpy-graphviz-dysaster-0.1.png) con todos los escenarios disponibles en la versión 0.1, estos mapas pueden realizarse online con [Renpy Analyser](https://renpy.amethysts.studio/), también es posible descargar una (versión de terminal/consola)[https://github.com/EwenQuim/renpy-graphviz/releases/] para generar el mapa.
+
 ## 🚀 Planes a futuro <a name = "future_scope"></a>
 
-Se planea continuar con el desarrollo cambiando en un futuro el motor [RenPy](https://www.renpy.org/) por "Unity", esto aún está en _veremos_ pues se está trabajando en la capacitación del equipo.
+Se planea continuar con el desarrollo cambiando en un futuro el motor [RenPy](https://www.renpy.org/) por [Unity](https://unity.com/), esto aún está en _veremos_ pues se está trabajando en la capacitación del equipo.
 
 ## 🏁 Desarrollo del juego <a name = "getting_started"></a>
 
-El juego usa el motor [RenPy](https://www.renpy.org/) para su desarrollo (basado en Python), sin embargo, ¡la versión oficial **No necesita Python**, llegar y jugar!
+El juego usa el motor [RenPy](https://www.renpy.org/) para su desarrollo (basado en [Python](https://www.python.org/)), sin embargo, ¡la versión oficial **No necesita Python**, llegar y jugar!
 
 <p align="center">
   <a href="https://youtu.be/0xikvMZl2nY" rel="noopener">
@@ -86,7 +105,7 @@ El juego usa el motor [RenPy](https://www.renpy.org/) para su desarrollo (basado
 
 ### Requisitos Previos
 
-Para la versión oficial sólo es bajar y jugar.
+Para la versión oficial **sólo es bajar y jugar**.
 
 Para la versión de desarrollo se necesita **[RenPy](https://www.renpy.org/)** para abrir el juego.
 
@@ -147,3 +166,4 @@ El Soundtrack del juego está disponible en formato mp3
 - :globe_with_meridians: [Freepik](https://www.freepik.com/free-photos-vectors/)
 - :globe_with_meridians: [Documentación oficial de RenPy](https://www.renpy.org/doc/html/index.html)
 - :globe_with_meridians: [Emojis para Github](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md)
+- :globe_with_meridians: [Mapa de los niveles](https://renpy.amethysts.studio/)
