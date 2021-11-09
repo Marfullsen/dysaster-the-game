@@ -36,6 +36,10 @@ init:
     image bg guard_4 = im.Scale('bg guard_4.png', width, height)
     image bg prison = im.Scale('bg prison.jpg', width, height)
     image bg parking = im.Scale('bg parking.jpg', width, height)
+    image bg houses = im.Scale('bg houses.jpg', width, height)
+    image bg attic = im.Scale('bg attic.jpg', width, height)
+    image bg hallway = im.Scale('bg hallway.jpg', width, height)
+    image bg refuge = im.Scale('bg refuge.jpg', width, height)
     image bg norte_sur = im.Scale('bg norte_sur.png', width, height)
     image bg zombies = im.Scale('bg zombies.jpg', width, height)
     image bg boat = im.Scale('bg boat.jpg', width, height)
@@ -152,32 +156,139 @@ label ir_al_norte:
     show fugitive one:
         xzoom 1.0
         linear .5 xalign .5
-    anon_n "Rayos, si me ven estoy perdido "
+    fugitivo "¡Rayos, si me ven estoy perdido!"
+
+    menu:
+        "¿Qué debería hacer?"
+        "Seguir corriendo":
+            jump seguir_corriendo
+        "Esconderse detrás de un auto":
+            jump esconderse_detras_del_auto
+        
+label esconderse_detras_del_auto:
     contexto "Contexto: \n{i}se oculta detrás de un automóvil estacionado{/i}"
 
     contexto "Contexto: \n{i}Personas civiles tratan de huir del lugar{/i}"
-    anon_n "¡Ábrete, ábrete! "
+    fugitivo "¡Ábrete, ábrete! "
     contexto "Contexto: \n{i}Tratando de abrir la cerradura de un auto{/i}"
 
-    anon_n "Ah, Maldita sea "
+    fugitivo "Ah, Maldita sea "
     contexto "Contexto: \n{i}Comienza a correr{/i}"
 
     contexto "Contexto: \n{i}Una niña choca con él mientras corre, empujándole{/i}"
-    anon_n "Estúpida niña, fíjate por..."
-    anon_n "Un momento... "
+    fugitivo "Estúpida niña, fíjate por..."
+    fugitivo "Un momento... "
     contexto "Contexto: \n{i}Se da cuenta que tiene una herida en su pierna{/i}"
 
-    anon_n "Ya veo"
+    fugitivo "Ya veo"
     contexto "Contexto: \n{i}La niña pequeña resultó ser una infectada y una horda ya ha rodeado al prisionero{/i}"
-    anon_n "¿Con que así va a ser, verdad? "
+    fugitivo "¿Con que así va a ser, verdad? "
     contexto "Contexto: \n{i}Saca un cuchillo oculto en su guante{/i}"
 
-    anon_n "¿Y qué estan esperando bastardos? ¡¡vengan por mí, que hoy es un gran día para morir!!"
+    fugitivo "¿Y qué estan esperando bastardos? ¡¡vengan por mí, que hoy es un gran día para morir!!"
     contexto "Contexto: \n{i}Se lanza a pelear con los infectados{/i}"
-    contexto "Contexto: \n{i}Después de un rato, tras estar luchando contra los infectados,{p}termina completamente agotado y cae al piso, mueriendo casi al instante{/i}"
+    contexto "Contexto: \n{i}Después de un rato, tras estar luchando contra los infectados{/i}"
+    contexto "Contexto: {i}Termina completamente agotado y cae al piso, mueriendo casi al instante.{/i}"
 
     "Bad Ending."
     jump fin
+
+label seguir_corriendo:
+    contexto "Contexto: \n{i}Sigue corriendo{/i}"
+    contexto "Contexto: \n{i}Se encuentra a una niña que parece estar sóla.{/i}"
+    menu:
+        "¿Cómo debo reaccionar?"
+        "Alejarse":
+            jump alejarse_de_la_nina
+        "Intentar atacarla":
+            jump atacar_a_la_nina
+
+label alejarse_de_la_nina:
+    #contexto "Contexto: \n{i}{/i}"
+    contexto "Contexto: \n{i}Al intentar alejarse lentamente, la niña se le acerca y lo alcanza a morder{/i}"
+    contexto "Contexto: \n{i}Desesperado busca en los alrededores una casa donde pueda encontrar provisiones y medicamentos para sanar su herida.{/i}"
+    contexto "Contexto: \n{i}A lo lejos alcanza a divisar dos casas...{/i}"
+    scene bg houses
+    menu:
+        "¿A cuál de esas dos casas debería ir?"
+        "Ir a la primera":
+            jump primera_casa
+        "Ir a la segunda":
+            jump segunda_casa
+
+label primera_casa:
+    scene bg attic
+    fugitivo "¡Maldita sea! No encuentro nada útil en este lugar..."
+    fugitivo "¡Me largo! Iré a la segunda casa"
+    contexto "Contexto: \n{i}Entra en la segunda casa{/i}"
+    jump segunda_casa
+
+label segunda_casa:
+    scene bg hallway
+    fugitivo "¡Bingo, aquí hay medicamentos para curar mi herida!"
+    menu:
+        "Me curaré enseguida pero ¿qué haré después?"
+        "Curarse y descansar en la misma casa":
+            jump curarse_y_quedarse
+        "Curarse y escapar del lugar":
+            jump curarse_y_escapar
+
+label curarse_y_quedarse:
+    #contexto "Contexto: \n{i}{/i}"
+    contexto "Contexto: \n{i}En la noche aparece una horda de zombies alertados por la mente colmena que poseen{/i}"
+    contexto "Contexto: \n{i}Los zombies rodean la casa y empiezan a atacar{/i}"
+    fugitivo "¡Ya no tengo alternativa!"
+    contexto "Contexto: \n{i}Sin poder correr, es devorado por los zombies.{/i}"
+    "Bad Ending."
+    jump fin
+
+label curarse_y_escapar:
+    scene bg refuge
+    contexto "Contexto: \n{i}Al escapar se encuentra con un grupo de supervivientes{/i}"
+    contexto "Contexto: \n{i}Lo aceptan y se queda a dormir en un refugio{/i}"
+    show fugitive one:
+        ease 1 xoffset 450 yoffset 50
+    fugitivo "Esconderé mi herida hasta que se haya sanado, quizás mañana estaré mejor."
+    contexto "Contexto: \n{i}En la noche sufre de un dolor intenso, queda inconsiente y se zombifica{/i}"
+    "Terrible Ending."
+    jump fin
+
+label atacar_a_la_nina:
+    #contexto "Contexto: \n{i}{/i}"
+    contexto "Contexto: \n{i}Ataca a la niña, antes de lograr matarla es mordido gravemente{/i}"
+    fugitivo "¡Mierda, esa maldita cría me ha mordido!"
+    contexto "Contexto: \n{i}Escapa rápidamente del lugar{/i}"
+    jump alejarse_de_la_nina_b
+
+label alejarse_de_la_nina_b:
+    #contexto "Contexto: \n{i}{/i}"
+    contexto "Contexto: \n{i}Desesperado busca en los alrededores una casa donde pueda encontrar provisiones y medicamentos para sanar su herida.{/i}"
+    contexto "Contexto: \n{i}A lo lejos alcanza a divisar dos casas...{/i}"
+    scene bg houses
+    menu:
+        "¿A cuál de esas dos casas debería ir?"
+        "Ir a la primera":
+            jump primera_casa_b
+        "Ir a la segunda":
+            jump segunda_casa_b
+
+label primera_casa_b:
+    scene bg attic
+    fugitivo "¡Maldita sea! No hay nada útil en este lugar..."
+    fugitivo "¡Me desangro! Iré a la segunda casa"
+    contexto "Contexto: \n{i}Se dirige a la segunda casa{/i}"
+    jump segunda_casa_b
+
+label segunda_casa_b:
+    scene bg hallway:
+        xzoom -1.0
+    fugitivo "¡Hurra, encontré medicamentos para curar mi herida!"
+    contexto "Contexto: \n{i}No se percata que había un zombie acechando en la casa{/i}"
+    contexto "Contexto: \n{i}Forcejean y debido a la herida anterior, se desmaya{/i}"
+    contexto "Contexto: \n{i}Muere en el lugar{/i}"
+    "Bad ending"
+    jump fin
+
 
 label ir_al_sur:
     scene bg boat
