@@ -14,7 +14,7 @@ init:
     ##
     # Don Nacho
     define color_nombre_narco = "#FF8200"
-    define anon_n = Character("???", color=color_nombre_narco)
+    define fugitivo = Character("???", color=color_nombre_narco)
     define narco = Character("Don Nacho", color=color_nombre_narco) # Ignacio Villanueva Alcallaga
     ##
     # Los demás.
@@ -100,15 +100,15 @@ label start: #renpy-graphviz: TITLE
 
     # Aparece uno de los protagonistas.
     show fugitive one:
-        ease 1 zoom 1.5 xoffset 500 yoffset 50
+        ease 1 zoom 1.5 xoffset 450 yoffset 50
 
     # Personaje principal inicia su diálogo.
-    anon_n "¡Finalmente, después de 6 años, soy libre!"
-    anon_n "¡Había estado esperando por este momento!"
+    fugitivo "¡Finalmente, después de 6 años, soy libre!"
+    fugitivo "¡Había estado esperando por este momento!"
 
     #contexto "Contexto: \n{i}Observando a lo lejos{/i}"
 
-    anon_n "¡Dios, ya sabía acerca de esto, pero verlo en persona va más allá de mi imaginación!"
+    fugitivo "¡Dios, ya sabía acerca de esto, pero verlo en persona va más allá de mi imaginación!"
 
     scene bg zombies
     #contexto "Contexto: \n{i}Se acerca una horda de infectados{/i}"
@@ -128,7 +128,7 @@ label ir_al_norte:
 
     contexto "Contexto: \n{i}Llega a un estacionamiento afuera de la prisión{/i}"
     scene bg parking
-    anon_n "{i}(¡Necesito salir de aquí, pero ya!){/i}"
+    fugitivo "{i}(¡Necesito salir de aquí, pero ya!){/i}"
     contexto "Contexto: \n{i}Guardias se estan enfrentando con infectados{/i}"
     show fugitive one:
         xzoom -1.0
@@ -179,7 +179,7 @@ label ir_al_sur:
     show lancha agua:
         ease 1 zoom 1.0 xoffset 300 yoffset 300
 
-    anon_n "¡Perfecto, esto me será útil!"
+    fugitivo "¡Perfecto, esto me será útil!"
 
     #contexto "Contexto: \n{i}Encuentra una lancha{/i}"
 
@@ -193,7 +193,7 @@ label ir_al_sur:
 
 label revisar_despues:
     contexto "Contexto: \n{i}Se sube a una lancha y arranca{/i}"
-    anon_n "¡Hasta nunca, Idiotas!"
+    fugitivo "¡Hasta nunca, Idiotas!"
     contexto "Contexto: \n{i}se aleja en la lancha{/i}"
     texto_centrado "{i}No las revisa y se adentra en altamar{p}Al tercer día se queda sin provisiones{p}{/i}"
     texto_centrado "{i}Una semana después muere por el hambre y la insolación{/i}"
@@ -205,7 +205,7 @@ label revisar_provisiones:
 
     #contexto "Contexto: \n{i}Se sube a una lancha y arranca{/i}"
 
-    anon_n "¡Hasta nunca, Idiotas!"
+    fugitivo "¡Hasta nunca, Idiotas!"
 
     #contexto "Contexto: \n{i}se aleja en la lancha{/i}"
 
@@ -265,7 +265,7 @@ label rescatarlo:
     naufrago "¡Maldito Bastardo!"
     show fugitive one:
         ease .5 zoom 1.5 xoffset 200 yoffset 50
-    anon_n "¡Es Don Nacho para tí!"
+    fugitivo "¡Es Don Nacho para tí!"
     contexto "{i}Le da un puñetazo que lo hace caer{/i}"
     naufrago "¡Me rompiste la nariz!"
     narco "¡No exageres!, además, ¿quién se supone que eres tú?"
