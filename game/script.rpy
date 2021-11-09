@@ -86,13 +86,20 @@ label start: #renpy-graphviz: TITLE
     texto_centrado "{i}Prisión de Guantánamo, Cuba{/i}"
 
     # Personajes secundarios comienzan el diálogo.
-    scene bg guard_1
+    scene bg guard_1:
+        ease 1 zoom 2.0 xoffset -250 yoffset -550
     guardia_1 "¡Los infectados están entrando por el muro este!"
-    scene bg guard_2
+    scene bg guard_2:
+        zoom 2.0 xoffset -250 yoffset -550
+        ease 0.5 zoom 2.0 xoffset -450 yoffset -500
     guardia_2 "¡Invadieron la zona norte, el muro practicamente ya no existe!"
-    scene bg guard_3
+    scene bg guard_3:
+        zoom 2.0 xoffset -450 yoffset -500
+        ease 0.5 zoom 2.0 xoffset -750 yoffset -400
     guardia_3 "¡Estamos teniendo una fuga de reclusos en la zona sur!"
-    scene bg guard_4
+    scene bg guard_4:
+        zoom 2.0 xoffset -750 yoffset -400
+        ease 0.5 zoom 2.0 xoffset -1100 yoffset -350
     guardia_4 "Acaban de confirmar que {b}ÉL{/b} esta entre los que se han fugado."
 
     # Fondo inicial.
