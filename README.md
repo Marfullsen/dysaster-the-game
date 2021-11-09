@@ -84,7 +84,7 @@ El jurado se vió maravillado por el juego, según se aprecia en [el video del e
 
 El juego está limitado al primer nivel y los contenidos presentados en esta documentación podrían variar considerablemente a través del tiempo en futuras versiones.
 
-**Spoiler**: hay un mapa [disponible aquí](./docs/img/renpy-graphviz-dysaster-0.1.png) con todos los escenarios disponibles en la versión 0.1, estos mapas pueden realizarse online con [Renpy Analyser](https://renpy.amethysts.studio/), también es posible descargar una (versión de terminal/consola)[https://github.com/EwenQuim/renpy-graphviz/releases/] para generar el mapa.
+**Spoiler**: hay un mapa [disponible aquí](./docs/img/renpy-graphviz-dysaster-0.1.png) con todos los escenarios disponibles en la versión 0.1, estos mapas pueden realizarse online con [Renpy Analyser](https://renpy.amethysts.studio/), también es posible descargar una (versión de terminal consola)[https://github.com/EwenQuim/renpy-graphviz/releases/] para generar el mapa.
 
 ## 🚀 Planes a futuro <a name = "future_scope"></a>
 
